@@ -1,0 +1,135 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Spartan", "https://fonts.google.com/specimen/Spartan";
+}
+
+.container {
+  height: 100%;
+  margin: 0px 200px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  // .flex-item {
+  //   flex-grow: 1;
+  //   // flex-shrink: 1;
+  //   flex-basis: 600px;
+  // }
+
+  .info {
+    flex-grow: 0;
+    flex-basis: 350px;
+    text-align: center;
+    h3 {
+      font-size: 2rem;
+      color: var(--very-dark-magenta);
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: var(--dark-grayish-magenta);
+      font-weight: 500;
+    }
+  }
+
+  .ratings {
+    flex-grow: 0;
+    flex-basis: 419px;
+    &-card {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      display: flex;
+
+      background-color: var(--light-grayish-magenta);
+      .stars {
+        display: flex;
+        align-items: center;
+        flex: 1;
+      }
+
+      p {
+        flex: 1;
+        color: var(--very-dark-magenta);
+        font-weight: 500;
+        word-wrap: keep-all;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-shrink: 0;
+    flex-grow: 1;
+
+    .card {
+      background-color: var(--very-dark-magenta);
+      color: white;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: start;
+      padding: 40px;
+      flex: 1 0 300px;
+      section {
+        display: inline-flex;
+
+        .card-buyer {
+          margin-left: 15px;
+        }
+      }
+      img {
+        border-radius: 50%;
+      }
+      span {
+        color: var(--soft-pink);
+      }
+    }
+  }
+}
+$breakpoint-tablet: 769px;
+@media (min-width: $breakpoint-tablet) {
+  .container > .info {
+    text-align: left;
+  }
+
+  div.ratings {
+    .card1 {
+      position: relative;
+      right: 30%;
+    }
+    .card2 {
+      position: relative;
+      right: 20%;
+    }
+    .card3 {
+      position: relative;
+      right: 10%;
+    }
+  }
+}
