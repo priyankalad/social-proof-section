@@ -27,9 +27,8 @@ body {
 
 .container {
   height: 100%;
-  margin: 0px 200px;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -41,8 +40,7 @@ body {
   // }
 
   .info {
-    flex-grow: 0;
-    flex-basis: 350px;
+    flex-basis: 261px;
     text-align: center;
     h3 {
       font-size: 2rem;
@@ -57,8 +55,7 @@ body {
   }
 
   .ratings {
-    flex-grow: 0;
-    flex-basis: 419px;
+    flex-basis: 400px;
     &-card {
       padding: 10px;
       margin: 10px;
@@ -69,15 +66,15 @@ body {
       .stars {
         display: flex;
         align-items: center;
-        flex: 1;
+        padding: 0px 10px;
       }
 
       p {
-        flex: 1;
         color: var(--very-dark-magenta);
         font-weight: 500;
         word-wrap: keep-all;
         margin-left: 15px;
+        font-size: 13px;
       }
     }
   }
@@ -85,8 +82,6 @@ body {
   .review-cards {
     display: flex;
     flex-wrap: wrap;
-    // flex-shrink: 0;
-    flex-grow: 1;
 
     .card {
       background-color: var(--very-dark-magenta);
@@ -95,7 +90,7 @@ body {
       border-radius: 10px;
       text-align: start;
       padding: 40px;
-      flex: 1 0 300px;
+      flex: 1 0 200px;
       section {
         display: inline-flex;
 
@@ -112,8 +107,12 @@ body {
     }
   }
 }
-$breakpoint-tablet: 769px;
+$breakpoint-tablet: 1025px;
 @media (min-width: $breakpoint-tablet) {
+  .container {
+    margin: 0px 150px;
+    justify-content: space-between;
+  }
   .container > .info {
     text-align: left;
   }
@@ -121,15 +120,21 @@ $breakpoint-tablet: 769px;
   div.ratings {
     .card1 {
       position: relative;
-      right: 30%;
+      right: 20%;
     }
     .card2 {
       position: relative;
-      right: 20%;
+      right: 10%;
+    }
+  }
+  div.review-cards {
+    .card2 {
+      position: relative;
+      top: 20px;
     }
     .card3 {
       position: relative;
-      right: 10%;
+      top: 40px;
     }
   }
 }
