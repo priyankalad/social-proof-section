@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/socialproofsection-using-flexbox-DMe3jx0vt)
 - Live Site URL:(https://priyankalad.github.io/social-proof-section/)
 
 ## My process
