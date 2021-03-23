@@ -10,6 +10,10 @@ html,
 body {
   height: 100%;
   box-sizing: border-box;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 45px top 45px, right 45px bottom 45px;
 }
 
 *,
@@ -109,6 +113,12 @@ body {
 }
 $breakpoint-tablet: 1025px;
 @media (min-width: $breakpoint-tablet) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 45px top 45px, right 45px bottom 45px;
+  }
   .container {
     margin: 0px 150px;
     justify-content: space-between;
