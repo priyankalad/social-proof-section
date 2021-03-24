@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile](./screenshots/mobile.png)
-![desktop](./screenshots/desktop.png)
+![mobile](./screenshots/mobile1.png)
+![desktop](./screenshots/desktop1.png)
 
 ### Links
 
@@ -44,8 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-- I used flexbox to implement this challenge.
-- Although I couldn't implemenent exactly as per the design, I somehow managed to develop as similar as possible using mostly flex-grow, flex-basis properties.
+- Flexbox basic properties. Yet to practice flex properties, which are not implemented in this challenge.
 
 ### Continued development
 
